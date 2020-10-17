@@ -1,0 +1,12 @@
+<h2>My Colors</h2>
+<ul class="colors">
+  <li
+    *ngFor="let color of colors"
+    (click)="onSelect(color)"
+  >
+    <app-color [color]="color"></app-color>
+  </li>
+</ul>
+
+<app-color-detail [color]="selectedColor"></app-color-detail>
+
